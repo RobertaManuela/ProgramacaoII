@@ -1,0 +1,32 @@
+﻿<Window x:Class="Ex01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex01"
+        mc:Ignorable="d"
+     Title="Viagem" Height="200" Width="250">
+    <Grid>
+        <TextBlock Height="20" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top"
+        Text="Distância - Km" Margin="10,10,0,0"/>
+
+        <TextBlock Height="20" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top"
+        Text="Tempo - h" Margin="10,10,10,0"/>
+
+        <TextBlock Height="20" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top"
+        Text="Velocidade - Km/h" Margin="10,100,0,0"/>
+
+        <TextBox Height="20" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top"
+         Text="" Margin="10,40,0,0" Name="Distancia"/>
+
+        <TextBox Height="20" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top"
+        Text="" Margin="10,40,10,0" Name="Tempo"/>
+
+        <TextBox Height="20" Width="220" HorizontalAlignment="Left" VerticalAlignment="Bottom"
+        Text="" Margin="10,20,0,20" Name="Velocidade"/>
+
+        <Button Height="20" Width="220" HorizontalAlignment="Left" VerticalAlignment="Top"
+        Content="Calcular" Margin="10,75,0,0"/>
+
+    </Grid>
+</Window>
