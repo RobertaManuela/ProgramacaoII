@@ -26,7 +26,7 @@
         Text="" Margin="10,20,0,20" Name="Velocidade"/>
 
         <Button Height="20" Width="220" HorizontalAlignment="Left" VerticalAlignment="Top"
-        Content="Calcular" Margin="10,75,0,0"/>
+        Content="Calcular" Margin="10,75,0,0" Click="CalcularClick"/>
 
     </Grid>
 </Window>

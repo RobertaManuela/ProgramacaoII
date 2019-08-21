@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ex01
+namespace Ex03
 {
     /// <summary>
     /// Interação lógica para MainWindow.xam
@@ -23,15 +23,16 @@ namespace Ex01
         public MainWindow()
         {
             InitializeComponent();
-        }      
-
-        private void CalcularClick(object sender, RoutedEventArgs e)
-        {
-            Viagem x = new Viagem();
-            x.SetDistancia(double.Parse(Distancia.Text));
-            x.SetTempo(double.Parse(Tempo.Text));
-            Velocidade.Text = x.CalcVelocidade().ToString();
         }
+
+        private void CalcularClick(Object sender, RoutedEventArgs e)
+        {
+            Retangulo x = new Retangulo();
+            x.SetBase(double.Parse(txtB.Text));
+            x.SetAltura(double.Parse(txtAlt.Text));
+            txtA.Text = x.CalcArea().ToString("0");
+            txtD.Text = x.CalcDiagonal().ToString("0");
+        }
+
     }
 }
-

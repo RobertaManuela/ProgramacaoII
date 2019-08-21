@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C85D1EDD-DBE1-4CD1-A86E-027B544C74F7}</ProjectGuid>
+    <ProjectGuid>{5E94EC24-1F39-46DA-9BE5-86E33304C81A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Ex01</RootNamespace>
-    <AssemblyName>Ex01</AssemblyName>
+    <RootNamespace>Ex03</RootNamespace>
+    <AssemblyName>Ex03</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Viagem.cs" />
+    <Compile Include="Retangulo.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
