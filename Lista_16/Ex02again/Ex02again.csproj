@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{75B03CC9-9F86-4E52-BBDF-BAB3073B48BC}</ProjectGuid>
+    <ProjectGuid>{12256A60-1172-46F2-A262-3BE45E2DB79D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Ex05_</RootNamespace>
-    <AssemblyName>Ex05_</AssemblyName>
+    <RootNamespace>Ex02again</RootNamespace>
+    <AssemblyName>Ex02again</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -69,7 +69,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Numeros.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

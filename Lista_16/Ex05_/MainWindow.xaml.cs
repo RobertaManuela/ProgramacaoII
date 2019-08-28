@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace parimpar
+namespace Ex05_
 {
     /// <summary>
     /// Interação lógica para MainWindow.xam
@@ -25,71 +25,23 @@ namespace parimpar
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            numeros n = new numeros();
-            n.SetInicio(int.Parse(a.Text));
-            n.SetFim(int.Parse(b.Text));
+            Numeros x = new Numeros();
+            x.SetInicio(int.Parse(i.Text));
+            x.SetFim(int.Parse(f.Text));
             bool bp, bi;
-            if (check1.IsChecked == true) bp = true;
-            else bp = false;
-            if (check2.IsChecked == true) bi = true;
-            else bi = false;
-            txtlist.ItemsSource = n.Calc(bp, bi);
-        }
-
-        class numeros
-        {
-            private int inicio, fim;
-
-            public void SetInicio(int a)
-            {
-                inicio = a;
-            }
-
-            public int GetInicio()
-            {
-                return inicio;
-            }
-
-            public void SetFim(int a)
-            {
-                fim = a;
-            }
-
-            public int GetFim()
-            {
-                return fim;
-            }
-
-            public int[] Calc(bool p, bool i)
-            {
-                int[] z = new int[fim - inicio + 1];
-                int cont = 0;
-                for (int x = inicio; x <= fim; x++)
-                {
-                    if (p == true && i == false && x % 2 == 0)
-                    {
-                        z[cont] = x;
-                        cont++;
-                    }
-
-                    if (i == true && p == false && x % 2 != 0)
-                    {
-                        z[cont] = x;
-                        cont++;
-                    }
-
-                    if (p == true && i == true)
-                    {
-                        z[cont] = x;
-                        cont++;
-                    }
-                }
-                int[] w = new int[cont];
-                Array.Copy(z, w, cont);
-                return w;
-            }
+            if (par.IsChecked == true) bp = true;
+            else
+                bp = false;
+            if (impar.IsChecked == true) bi = true;
+            else
+                bi = false;
+            lista.ItemsSource = x.Calcular(bp, bi);
+            //bp = par.IsChecked.Value;
+            //bi = impar.IsChecked.Value;
+            //lista.ItemsSource = x.Calcular(par.IsChecked.Value, impar.IsChecked.Value);
         }
     }
 }

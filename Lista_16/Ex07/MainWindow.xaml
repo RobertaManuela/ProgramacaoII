@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ex07"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="400">
+        Title="MainWindow" Height="350" Width="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -18,7 +18,7 @@
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
                 VerticalAlignment="Top" Margin="10,10,0,0" Text="Nome"/>
 
-                <TextBox Name="A" Height="20" Width="350" HorizontalAlignment="Left"
+                <TextBox Name="txtA" Height="20" Width="350" HorizontalAlignment="Left"
                 VerticalAlignment="Top" Text="Aluno" Margin="10,35,0,0"/>
             </Grid>
 
@@ -33,14 +33,25 @@
                 VerticalAlignment="Top" Text="Programação" Margin="10,35,0,0"/>
 
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
-                VerticalAlignment="Top" Margin="140,17,0,0" Text="Semestre"/>
+                VerticalAlignment="Top" Margin="135,10,0,0" Text="Semestre"/>
+
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="266,10,0,0" Text="Média"/>
 
                 <TextBox Name="C" Height="20" Width="100" HorizontalAlignment="Left"
                 VerticalAlignment="Top" Text="Programação" Margin="10,35,0,0"/>
+
+                <TextBox x:Name="txtS" Height="20" Width="100" HorizontalAlignment="Left"
+                 VerticalAlignment="Top" Text="" Margin="135,35,0,0"/>
+
+                <TextBox x:Name="txtM" Height="20" Width="100" HorizontalAlignment="Left"
+                 VerticalAlignment="Top" Text="" Margin="266,35,0,0"/>
+
+                <CheckBox Content="Aprovado" HorizontalAlignment="Left" Margin="383,35,0,0" 
+                VerticalAlignment="Top"/>
             </Grid>
 
         </GroupBox>
-
 
     </Grid>
 </Window>
