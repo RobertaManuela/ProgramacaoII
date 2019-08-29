@@ -11,9 +11,27 @@ namespace Ex07
         private string nome;
         private string semestre;
         private int media;
-        private bool aprovado;
+        private string apre;
 
-        public 
+        public Disciplina(string nome, string s, int media, bool aprovado)
+        {
+            this.nome = nome;
+            this.semestre = s;
+            this.media = media;
+
+            if (aprovado == true) apre = "Aprovado";
+            else apre = "Reprovado";
+        }
+
+        public override string ToString() //Imprime no listbox
+        {
+            return $"{nome} - {semestre} - {media} - {apre}";
+        }
+
+        public int GetMedia()
+        {
+            return media;
+        }
 
     }
 }

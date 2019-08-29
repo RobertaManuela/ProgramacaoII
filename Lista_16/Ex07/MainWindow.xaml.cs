@@ -27,30 +27,28 @@ namespace Ex07
 
         Historico h;
 
-        private void Button_Click(object sender, RoutedEventArgs)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            h = new Historico();
-            h.Inserir(new Disciplina(txtD.Text, txtS.Text, int.Parse(txtM.Text));
-            lista.ItemsSource = h.disc;
-            lista.Text = h.IRA().ToString();
+            h = new Historico(aluno.Text);
         }
 
-        private void Button_Click1(object sender, RoutedEventArgs)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            h = new Historico();
-            h.Inserir(new Disciplina(nome.Text, semestre.Text, int.Parse(media.Text));
+            Disciplina x = new Disciplina(nome.Text, semestre.Text, int.Parse(media.Text),Aprovado.IsChecked.Value);
+            h.Inserir(x);
         }
 
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            h = new Historico();
-            
+            if (lista.SelectedIndex != -1) 
+            h.Excluir(lista.SelectedIndex); 
+            lista.ItemsSource = h.Listar(); 
         }
-
+    
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show(h.IRA().ToString());
         }
 
 

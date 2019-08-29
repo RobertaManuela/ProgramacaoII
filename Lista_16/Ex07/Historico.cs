@@ -11,31 +11,42 @@ namespace Ex07
         private string aluno;
         private int k;
         private Disciplina[] discs = new Disciplina[10];
+
         public Historico(string aluno)
         {
             this.aluno = aluno;
         }
+
         public void Inserir(Disciplina d)
         {
             if (k < 10)
-                disc[k++] = d;
+                discs[k++] = d;//Insere no histórico, k armazena a quantidade de disciplinas existentes
         }
+
         public Disciplina[] Listar()
         {
-            Disciplina[] novo = new Disciplina[k];
-            Array.Copy(disc, novo, k);
-            return novo;
+            Disciplina[] poc = new Disciplina[k]; //k disciplinas existentes
+            Array.Copy(discs, poc, k); //Copia para um novo vetor apenas as posições ocupadas e lista as mesmas
+            return poc;
         }
+
         public double IRA()
         {
-            if (k = 0) return 0;
-            double x;
+            if (k == 0) return 0;
+            double x = 0;
             foreach (Disciplina d in discs)
-                if (d != null    x = x + d.GetMedia();
+                if (d != null)  x = x + d.GetMedia();
             return x / k;
 
         }
-    }
-}
+
+        public void Excluir(int x)
+        {
+            for (int i = x; i < k; i++) 
+            {
+                discs[i] = discs[i + 1];
+            }
+            k--;
+        }
     }
 }
