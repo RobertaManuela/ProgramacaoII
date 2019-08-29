@@ -18,8 +18,8 @@
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
                 VerticalAlignment="Top" Margin="10,10,0,0" Text="Nome"/>
 
-                <TextBox Name="txtA" Height="20" Width="350" HorizontalAlignment="Left"
-                VerticalAlignment="Top" Text="Aluno" Margin="10,35,0,0"/>
+                <TextBox Name="aluno" Height="20" Width="450" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Text="" Margin="10,35,0,0"/>
             </Grid>
 
         </GroupBox>
@@ -38,20 +38,33 @@
                 <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
                 VerticalAlignment="Top" Margin="266,10,0,0" Text="Média"/>
 
-                <TextBox Name="C" Height="20" Width="100" HorizontalAlignment="Left"
-                VerticalAlignment="Top" Text="Programação" Margin="10,35,0,0"/>
+                <TextBox Name="nome" Height="20" Width="100" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Text="" Margin="10,35,0,0"/>
 
-                <TextBox x:Name="txtS" Height="20" Width="100" HorizontalAlignment="Left"
+                <TextBox x:Name="semestre" Height="20" Width="100" HorizontalAlignment="Left"
                  VerticalAlignment="Top" Text="" Margin="135,35,0,0"/>
 
-                <TextBox x:Name="txtM" Height="20" Width="100" HorizontalAlignment="Left"
+                <TextBox x:Name="media" Height="20" Width="100" HorizontalAlignment="Left"
                  VerticalAlignment="Top" Text="" Margin="266,35,0,0"/>
 
                 <CheckBox Content="Aprovado" HorizontalAlignment="Left" Margin="383,35,0,0" 
-                VerticalAlignment="Top"/>
+                VerticalAlignment="Top" Name="Aprovado"/>
             </Grid>
-
         </GroupBox>
+        <ListBox Height="74" Margin="0,33,0,0" Grid.Row="2" VerticalAlignment="Top" Name="lista"/>
+        
+        <Button Content="Aluno" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"
+        Margin="10,5,0,0" Grid.Row="2" Click="Button_Click"/>
+
+        <Button Content="Inserir" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"
+        Margin="120,5,0,0" Grid.Row="2" Click="Button_Click_1"/>
+
+        <Button Content="Excluir" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"
+        Margin="240,5,0,0" Grid.Row="2" Click="Button_Click_2"/>
+
+        <Button Content="IRA" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"
+        Margin="360,5,0,0" Grid.Row="2" Click="Button_Click_3"/>
+
 
     </Grid>
 </Window>

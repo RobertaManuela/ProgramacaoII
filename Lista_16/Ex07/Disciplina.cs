@@ -9,20 +9,11 @@ namespace Ex07
     class Disciplina
     {
         private string nome;
+        private string semestre;
         private int media;
-        public Disciplina (string nome, int media)
-        {
-            this.nome = nome;
-            this.media = media;
-        }
-        public override string ToString()
-        {
-            return nome;
-        }
-        public double GetMedia()
-        {
-            return media;
-        }
-        
+        private bool aprovado;
+
+        public 
+
     }
 }

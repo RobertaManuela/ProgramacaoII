@@ -24,16 +24,35 @@ namespace Ex07
         {
             InitializeComponent();
         }
-        private void Button_Click (object sender, RoutedEventArgs)
+
+        Historico h;
+
+        private void Button_Click(object sender, RoutedEventArgs)
         {
-            Historico h = new Historico("Roberta");
-            h.Inserir( new Disciplina("POO",80));
-            h.Inserir( new Disciplina("Design",70));
-            h.Inserir( new Disciplina("Física",95));
-            List.ItemsSource = h.disc;
-            txt.Text = h.IRA().ToString();
+            h = new Historico();
+            h.Inserir(new Disciplina(txtD.Text, txtS.Text, int.Parse(txtM.Text));
+            lista.ItemsSource = h.disc;
+            lista.Text = h.IRA().ToString();
         }
 
-    
+        private void Button_Click1(object sender, RoutedEventArgs)
+        {
+            h = new Historico();
+            h.Inserir(new Disciplina(nome.Text, semestre.Text, int.Parse(media.Text));
+        }
+
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            h = new Historico();
+            
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }

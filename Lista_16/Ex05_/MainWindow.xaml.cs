@@ -32,7 +32,7 @@ namespace Ex05_
             x.SetInicio(int.Parse(i.Text));
             x.SetFim(int.Parse(f.Text));
             bool bp, bi;
-            if (par.IsChecked == true) bp = true;
+            if (par.IsChecked == true) bp = true; // Verifica se está checado
             else
                 bp = false;
             if (impar.IsChecked == true) bi = true;
@@ -41,7 +41,7 @@ namespace Ex05_
             lista.ItemsSource = x.Calcular(bp, bi);
             //bp = par.IsChecked.Value;
             //bi = impar.IsChecked.Value;
-            //lista.ItemsSource = x.Calcular(par.IsChecked.Value, impar.IsChecked.Value);
+            //lista.ItemsSource = x.Calcular(par.IsChecked.Value, impar.IsChecked.Value); faria a mesma coisa
         }
     }
 }

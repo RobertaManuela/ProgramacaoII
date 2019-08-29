@@ -9,16 +9,16 @@ namespace Ex07
     class Historico
     {
         private string aluno;
-        int k;
-        private Disciplina[] disc = new Disciplina[10];
+        private int k;
+        private Disciplina[] discs = new Disciplina[10];
         public Historico(string aluno)
         {
             this.aluno = aluno;
         }
         public void Inserir(Disciplina d)
         {
-           if(k < 10)
-             disc[k++] = d;
+            if (k < 10)
+                disc[k++] = d;
         }
         public Disciplina[] Listar()
         {
@@ -31,9 +31,11 @@ namespace Ex07
             if (k = 0) return 0;
             double x;
             foreach (Disciplina d in discs)
-              if( d != null    x = x + d.GetMedia();
+                if (d != null    x = x + d.GetMedia();
             return x / k;
-                
+
         }
+    }
+}
     }
 }
